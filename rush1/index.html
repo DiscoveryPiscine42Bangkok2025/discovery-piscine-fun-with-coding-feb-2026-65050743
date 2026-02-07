@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42bkk rush project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+ <style>
+    :root {
+      --bg-dark: #0f1419;
+      --bg-card: #1a2332;
+      --accent: #00d4aa;
+      --accent-hover: #00b894;
+      --text: #e7e9ea;
+      --text-muted: #8b98a5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Kanit', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem; /* padding ใส่ไว้ไม่งั้นมือถือจะดูโง่มาก */
+    }
+    h1 {
+      font-weight: 700; /* ตัวจะได้หนา */
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+    .card-cv {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    /* x y z */
+    .card-cv:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 40px rgba(0, 212, 170, 0.12);
+      color: var(--text);
+    }
+    .card-cv h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+    .card-cv p {
+      color: var(--text-muted);
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    .card-cv .arrow {
+      color: var(--accent);
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    /* footer {
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    } */
+  </style>
+</head>
+<body>
+  <!-- zone container [ block ทั้งหมด] -->
+  <div class="container-custom text-center">
+    <h1>Welcome to 42BKK RUSH PROJECT</h1>
+    <!-- <p class="lead">TEST LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG TEXT</p> -->
+    <p class="lead">❤️</p>
+    <!-- div ของ cv แรก โดย set ให้อยู่ตรงกลางทั้งหมดผ่าน และใช้ clsas grid ช่วย 100% และ 50% ตามจอ-->
+    <div class="row g-3 justify-content-center">
+      <div class="col-12 col-md-6">
+        <a href="cv1.html" class="card-cv">
+          <h2>chtancha</h2>
+          <p>Computer Science
+          </p>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    <!-- div ของ cv สอง บลาๆๆเหมือนอันแรก -->
+    <div class="col-12 col-md-6">
+        <a href="cv2.html" class="card-cv">
+          <h2>rtawornn</h2>
+          <p>Industrial Physics Program</p>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+    <!-- end cv สอง -->
+    <!-- footer -->
+    <!-- <footer>
+      <p>&copy; test1234</p>
+    </footer> -->
+     <!-- end footer -->
+  </div>
+  <!-- end zone container -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
